@@ -45,7 +45,7 @@ namespace MasterarbeitGraphQL
 
             app.UseGraphiQl("/graphql");
 
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 

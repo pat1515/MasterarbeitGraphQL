@@ -9,8 +9,7 @@ namespace MasterarbeitGraphQL.GraphQL
         {
             Name = "Buch";
 
-            Field(x => x.ID, type: typeof(IdGraphType));
-            Field(x => x.AUTOR_ID);
+            Field(x => x.ID, type: typeof(IdGraphType)).Name("id");
             Field(x => x.TITEL).Name("titel");
             Field(x => x.ISBN).Name("isbn");
             Field(x => x.ERSCHEINUNGSDATUM).Name("erscheinungsdatum");
